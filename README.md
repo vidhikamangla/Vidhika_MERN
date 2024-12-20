@@ -1,11 +1,4 @@
-# Vidhika_MERN
-Task Manager App: a simple application using the MERN stack and upload the having the basic CRUD (Create, Read, Update, Delete) functionality for managing tasks.
-
-Here's a final **README.md** for your project that includes clear instructions on how to set up, run, and use your MERN stack task manager application:
-
----
-
-# TaskManager - A MERN CRUD Application
+# Task Manager App
 
 ## Project Overview
 
@@ -37,7 +30,7 @@ TaskManager is a simple task management web application built using the **MERN s
 
 Make sure you have the following installed on your system:
 
-- **Node.js** (LTS version)
+- **Node.js**
 - **MongoDB** (or use MongoDB Atlas for cloud-hosted database)
 - **npm** (comes with Node.js)
 
@@ -48,8 +41,8 @@ Make sure you have the following installed on your system:
 #### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/task-manager-mern.git
-cd task-manager-mern
+git clone https://github.com/vidhikamangla/Vidhika_MERN.git
+cd Vidhika_MERN
 ```
 
 #### 2. Backend Setup (Express & MongoDB)
@@ -106,6 +99,8 @@ cd task-manager-mern
 
 ## How to Use
 
+Visit http://localhost:5173. Now you can add, update, and delete tasks and mark them as completed/incomplete.
+
 ### Backend API Endpoints
 
 The backend exposes the following API endpoints:
@@ -151,19 +146,22 @@ task-manager-mern/
 - If the frontend doesn’t load correctly, ensure the development server is running on the correct port (`5173`).
 
 ---
+## Output Images
 
-## License
+Main page
+![image](https://github.com/user-attachments/assets/42004bed-3464-40aa-9a9f-6973d148b0d2)
 
-This project is licensed under the MIT License.
+1. Adding new tasks:
+![image](https://github.com/user-attachments/assets/06546221-952d-4378-aa54-bd9819c8a144)
 
----
+Task Added Successfully:
+![image](https://github.com/user-attachments/assets/d09e5dc4-0c61-4cf5-b42c-75929d3f16fb)
 
-## Conclusion
+2. Editing a task:
 
-You've now set up a fully functional **TaskManager** application using the MERN stack. You can add more features like authentication, validation, or deploy it on cloud platforms like Heroku or Vercel.
+4. 
+5. Deleting a task:
 
-Happy coding! 😄
 
----
 
-### **Note:** Replace the link to your GitHub repository in the cloning instructions with your actual project link.
+
