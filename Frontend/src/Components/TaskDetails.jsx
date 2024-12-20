@@ -7,6 +7,7 @@ const TaskDetails = ({ task, onEdit, onDelete, onComplete }) => {
   const [isEditing, setIsEditing] = useState(false);
   const [editedTitle, setEditedTitle] = useState(task.title);
   const [editedDescription, setEditedDescription] = useState(task.description);
+  const [isButtonPressed, setIsButtonPressed] = useState(false);
 
   const handleTitleChange = (e) => setEditedTitle(e.target.value);
   const handleDescriptionChange = (e) => setEditedDescription(e.target.value);
@@ -18,6 +19,7 @@ const TaskDetails = ({ task, onEdit, onDelete, onComplete }) => {
     try {
       await onEdit(task._id, updatedTask);
       setIsEditing(false);
+      setIsButtonPressed(true); 
     } catch (error) {
       console.error("Error updating task:", error);
     }
@@ -26,6 +28,7 @@ const TaskDetails = ({ task, onEdit, onDelete, onComplete }) => {
   const handleDelete = async () => {
     try {
       await onDelete(task._id);
+      setIsButtonPressed(true);
     } catch (error) {
       console.error("Error deleting task:", error);
     }
@@ -34,6 +37,7 @@ const TaskDetails = ({ task, onEdit, onDelete, onComplete }) => {
   const handleComplete = async () => {
     try {
       await onComplete(task._id);
+      setIsButtonPressed(true);
     } catch (error) {
       console.error("Error completing task:", error);
     }
@@ -43,35 +47,43 @@ const TaskDetails = ({ task, onEdit, onDelete, onComplete }) => {
     <div
       className={`task-details-box ${task.isCompleted ? "completed-task" : ""}`}
     >
-      {isEditing ? (
-        <form onSubmit={handleEditSubmit}>
-          <div>
-            <label>Title</label>
-            <input
-              type="text"
-              value={editedTitle}
-              onChange={handleTitleChange}
-              required
-            />
-          </div>
-          <div>
-            <label>Description</label>
-            <textarea
-              value={editedDescription}
-              onChange={handleDescriptionChange}
-              required
-            />
-          </div>
-          <button type="submit">Save Changes</button>
-        </form>
+      {isButtonPressed ? (
+        <div>
+            <p>Sort and manage your tasks with ease :)) !</p> 
+        </div>
       ) : (
         <>
-          <h2>{task.title}</h2>
-          <p>{task.description}</p>
-          <button onClick={() => setIsEditing(true)}>Edit</button>
-          <button onClick={handleDelete}>Delete</button>
-          {!task.isCompleted && (
-            <button onClick={handleComplete}>Mark as Completed</button>
+          {isEditing ? (
+            <form onSubmit={handleEditSubmit}>
+              <div>
+                <label>Title</label>
+                <input
+                  type="text"
+                  value={editedTitle}
+                  onChange={handleTitleChange}
+                  required
+                />
+              </div>
+              <div>
+                <label>Description</label>
+                <textarea
+                  value={editedDescription}
+                  onChange={handleDescriptionChange}
+                  required
+                />
+              </div>
+              <button type="submit">Save Changes</button>
+            </form>
+          ) : (
+            <>
+              <h2>{task.title}</h2>
+              <p>{task.description}</p>
+              <button onClick={() => setIsEditing(true)}>Edit</button>
+              <button onClick={handleDelete}>Delete</button>
+              {!task.isCompleted && (
+                <button onClick={handleComplete}>Mark as Completed</button>
+              )}
+            </>
           )}
         </>
       )}
