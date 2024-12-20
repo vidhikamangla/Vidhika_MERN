@@ -1,11 +1,4 @@
-# Vidhika_MERN
-Task Manager App: a simple application using the MERN stack and upload the having the basic CRUD (Create, Read, Update, Delete) functionality for managing tasks.
-
-Here's a final **README.md** for your project that includes clear instructions on how to set up, run, and use your MERN stack task manager application:
-
----
-
-# TaskManager - A MERN CRUD Application
+# Task Manager App
 
 ## Project Overview
 
@@ -37,7 +30,7 @@ TaskManager is a simple task management web application built using the **MERN s
 
 Make sure you have the following installed on your system:
 
-- **Node.js** (LTS version)
+- **Node.js**
 - **MongoDB** (or use MongoDB Atlas for cloud-hosted database)
 - **npm** (comes with Node.js)
 
@@ -48,8 +41,8 @@ Make sure you have the following installed on your system:
 #### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/task-manager-mern.git
-cd task-manager-mern
+git clone https://github.com/vidhikamangla/Vidhika_MERN.git
+cd Vidhika_MERN
 ```
 
 #### 2. Backend Setup (Express & MongoDB)
@@ -106,6 +99,8 @@ cd task-manager-mern
 
 ## How to Use
 
+Visit http://localhost:5173. Now you can add, update, and delete tasks and mark them as completed/incomplete.
+
 ### Backend API Endpoints
 
 The backend exposes the following API endpoints:
@@ -151,19 +146,43 @@ task-manager-mern/
 - If the frontend doesn’t load correctly, ensure the development server is running on the correct port (`5173`).
 
 ---
+## Output Images
 
-## License
+Main page
+![image](https://github.com/user-attachments/assets/24b5b5bc-924a-443f-9370-50df1be9db4a)
 
-This project is licensed under the MIT License.
+1. Adding new tasks:
+   
+![image](https://github.com/user-attachments/assets/3649c589-5518-4704-8c81-05a09f563813)
 
----
+-- Task Added Successfully:
 
-## Conclusion
+-- ![image](https://github.com/user-attachments/assets/62804edb-f6c4-4067-ac46-4c56013f38c2)
 
-You've now set up a fully functional **TaskManager** application using the MERN stack. You can add more features like authentication, validation, or deploy it on cloud platforms like Heroku or Vercel.
+2. Editing a task:
+   
+![image](https://github.com/user-attachments/assets/a2142d26-a727-45f4-928d-50587d5f0514)
+![image](https://github.com/user-attachments/assets/1f27b7d4-6824-410a-a7a7-cd8cb6bf06aa)
 
-Happy coding! 😄
+-- Task Edited successfully 
 
----
+-- -- Task Added Successfully:
+![image](https://github.com/user-attachments/assets/8d0a77ab-127a-4ea8-9b5c-4987b1601940)
 
-### **Note:** Replace the link to your GitHub repository in the cloning instructions with your actual project link.
+3. Deleting a Task:
+
+   ![image](https://github.com/user-attachments/assets/64a98b1e-d630-44d9-b1a5-510746568c54)
+
+   (deleted ml project task)
+
+4. Mark as Completed:
+   ![image](https://github.com/user-attachments/assets/4e6efd27-20dc-44aa-b5f7-dc87c77db7fb)
+   
+   ![image](https://github.com/user-attachments/assets/154a795a-ec4d-4f8e-a80f-ee1204eb450a)
+
+   ![image](https://github.com/user-attachments/assets/b8fffe17-5e64-4466-828b-2b31493a6e25)
+
+   (u can filter as: completed, incomplete, all tasks)
+
+Your table gets updated in MongoDB:
+![image](https://github.com/user-attachments/assets/7084fddd-d22f-4ba3-9191-bf73be6bd4a9)
