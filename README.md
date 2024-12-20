@@ -149,19 +149,40 @@ task-manager-mern/
 ## Output Images
 
 Main page
-![image](https://github.com/user-attachments/assets/42004bed-3464-40aa-9a9f-6973d148b0d2)
+![image](https://github.com/user-attachments/assets/24b5b5bc-924a-443f-9370-50df1be9db4a)
 
 1. Adding new tasks:
-![image](https://github.com/user-attachments/assets/06546221-952d-4378-aa54-bd9819c8a144)
+   
+![image](https://github.com/user-attachments/assets/3649c589-5518-4704-8c81-05a09f563813)
 
-Task Added Successfully:
-![image](https://github.com/user-attachments/assets/d09e5dc4-0c61-4cf5-b42c-75929d3f16fb)
+-- Task Added Successfully:
+
+-- ![image](https://github.com/user-attachments/assets/62804edb-f6c4-4067-ac46-4c56013f38c2)
 
 2. Editing a task:
+   
+![image](https://github.com/user-attachments/assets/a2142d26-a727-45f4-928d-50587d5f0514)
+![image](https://github.com/user-attachments/assets/1f27b7d4-6824-410a-a7a7-cd8cb6bf06aa)
 
-4. 
-5. Deleting a task:
+-- Task Edited successfully 
 
+-- -- Task Added Successfully:
+![image](https://github.com/user-attachments/assets/8d0a77ab-127a-4ea8-9b5c-4987b1601940)
 
+3. Deleting a Task:
 
+   ![image](https://github.com/user-attachments/assets/64a98b1e-d630-44d9-b1a5-510746568c54)
 
+   (deleted ml project task)
+
+4. Mark as Completed:
+   ![image](https://github.com/user-attachments/assets/4e6efd27-20dc-44aa-b5f7-dc87c77db7fb)
+   
+   ![image](https://github.com/user-attachments/assets/154a795a-ec4d-4f8e-a80f-ee1204eb450a)
+
+   ![image](https://github.com/user-attachments/assets/b8fffe17-5e64-4466-828b-2b31493a6e25)
+
+   (u can filter as: completed, incomplete, all tasks)
+
+Your table gets updated in MongoDB:
+![image](https://github.com/user-attachments/assets/7084fddd-d22f-4ba3-9191-bf73be6bd4a9)
