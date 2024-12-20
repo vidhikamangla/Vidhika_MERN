@@ -4,7 +4,7 @@
 }
 
 .tasks-list {
-    width: 40%;
+    width: 30%;
     background-color: #684627;
     color: white;
     padding: 20px;
@@ -16,6 +16,7 @@
 .task-button {
     background-color: #daa384;
     color: white;
+    font-family:'Courier New', Courier, monospace;
     padding: 10px;
     margin: 5px 0;
     cursor: pointer;
@@ -26,12 +27,13 @@
 }
 
 .task-button:hover {
-    background-color: #ff8dc8;
+    background-color: #d88091;
 }
 
 .create-task-button {
     background-color: #e37a9a;
     color: white;
+    font-family:'Lucida Console','Trebuchet MS';
     padding: 10px;
     margin-bottom: 20px;
     border: none;
@@ -41,13 +43,19 @@
 }
 
 .create-task-button:hover {
-    background-color: #b99a58;
+    background-color: #d65a7f;
+    transform: scale(1.03); 
 }
 
 .task-button.completed {
     background-color: #854d59; 
     color: #f1f1f1;
+    font-family:'Courier New', Courier, monospace;
     text-decoration: line-through;
+  }
+
+.task-button.completed:hover {
+    background-color: #76444f; 
   }
 
 .task-filter-buttons {
@@ -59,8 +67,9 @@
   .task-filter-buttons button {
     padding: 6px 12px;  
     margin: 0 10px;  
-    background-color: #f9e0a2;  
-    color: #4d4d4d;  
+    background-color: #fed8a6;  
+    color: #4d4d4d; 
+    font-family:'Lucida Console','Trebuchet MS';
     border-radius: 4px; 
     font-size: 14px; 
     cursor: pointer;
@@ -68,8 +77,8 @@
   }
   
   .task-filter-buttons button:hover {
-    background-color: #764166;  
-    transform: scale(1.05); 
+    background-color: #b99a58;  
+    transform: scale(1.22); 
     color: #f1f1f1;
   }
   
