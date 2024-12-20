@@ -1,0 +1,104 @@
+.task-details-box {
+    background-color: #b99cc8;  
+    padding: 25px;
+    border-radius: 12px;
+    width: 100%;
+    border-radius: 12px;
+    max-width: 450px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .task-details-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .task-details-box h2 {
+    font-size: 1.8rem;
+    margin-bottom: 12px;
+    color: #dd8c5d;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .task-details-box p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #f1f1f1;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  button {
+    background-color: #f7b492;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    margin-top: 10px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #e59b6f;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+  }
+  
+  input:focus, textarea:focus {
+    border-color: #dd8c5d;
+    outline: none;
+  }
+  
+  textarea {
+    height: 120px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .completed-task {
+    background-color: #f3a0ad; 
+    color: #f1f1f1;
+    border: 2px solid #ed7386;
+  }
+
+.task-details-container {
+    width: 60%;
+    padding: 20px;
+    background-color: #ffafe3;
+    overflow-y: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    transition: all 0.3s ease;
+    margin-right: 20px; /* Adding gap between containers */
+    border-radius: 12px; /
+}
+
+.task-details-container {
+    width: 60%;
+    padding: 20px;
+    background-color: #9b7d61;
+    overflow-y: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    transition: all 0.3s ease;
+}
+  
